@@ -1,0 +1,34 @@
+{
+  "name": "scale-color-perceptual",
+  "version": "0.0.0",
+  "description": "Javascript exports of matplotlib's new default color scales; magma, inferno, plasma and viridis. Works with browserify and D3.js",
+  "main": "browser.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/politiken-journalism/scale-color-perceptual.git"
+  },
+  "keywords": [
+    "color",
+    "scale",
+    "perceptual",
+    "matplotlib",
+    "viridis",
+    "inferno",
+    "magma",
+    "plasma",
+    "d3",
+    "interpolation"
+  ],
+  "author": "Emil Bay <emil.bay@pol.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/politiken-journalism/scale-color-perceptual/issues"
+  },
+  "homepage": "https://github.com/politiken-journalism/scale-color-perceptual#readme",
+  "devDependencies": {
+    "standard": "^5.3.1"
+  }
+}
