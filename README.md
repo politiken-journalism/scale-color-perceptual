@@ -13,7 +13,45 @@ npm install scale-color-perceptual
 Usage
 -----
 
-WIP
+```js
+const scale = require('scale-color-perceptual')
+
+[0, 0.25, 0.5, 0.75, 1].map(scale.viridis) // Spits out the colors at the given points
+```
+
+Exports `scale.inferno(t)`, `scale.magma(t)`, `scale.plasma(t)` and
+`scale.viridis(t)`, all taking scale parameter `t` in the range `[0, 1]`.
+If a number is given outside this range is given **an `Error` will be thrown**.
+
+Each of the scales has been put in the root of the module allowing you
+to import only the scale you need, yielding a smaller JS file:
+
+```js
+
+const viridis = require('scale-color-perceptual/viridis')
+
+[0, 0.25, 0.5, 0.75, 1].map(viridis) // Spits out the colors at the given
+```
+
+It can also be used with D3:
+
+```js
+const d3 = require('d3')
+const plasma = require('scale-color-perceptual/plasma')
+
+const depthScale = d3.scale.linear().domain([-100, 100]) // default range is [0, 1]
+    .clamp(true) // Make sure the output is constrained to [0, 1]
+
+d3.selectAll('div', document.body)
+    .data(d3.shuffle(d3.range(-100, 100, 0.1)).map(n => Math.random() * n))
+  .enter().append('div')
+    .style({
+      background: d => viridis(depthScale(d)),
+      width: '10px',
+      height: '10px',
+      float: 'left'
+    })
+```
 
 Development
 -----------
