@@ -3,7 +3,7 @@
 
 > Javascript exports of matplotlib's new default color scales; magma, inferno, plasma and viridis. Works with browserify and D3.js
 
-![example/example.png](Image showing inferno, magma, plasma and viridis respectibely)  
+![Image showing inferno, magma, plasma and viridis respectibely](example/example.png)  
 **Inferno, magma, plasma and viridis respectibely**
 Installation
 ------------
