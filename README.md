@@ -19,8 +19,9 @@ Development
 -----------
 
 [`triplet-data/`](triplet-data/) contains raw JSON exports of the pixel triplets
-from [bids/colormap][1] which are the default color scales in matplotlib 2.0.
-The pixel triplets were obtained from [bids/colormap#84cb377][2].
+from [`bids/colormap`][1] which are the default color scales in matplotlib 2.0.
+The pixel triplets were obtained from [`bids/colormap#84cb377`][2]. To build the
+corresponding [`hex-data/`](hex-data/) files, run `make`.
 
 License
 -------
