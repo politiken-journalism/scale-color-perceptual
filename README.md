@@ -1,10 +1,10 @@
 `scale-color-perceptual`
 ========================
 
-> Javascript exports of matplotlib's new default color scales; magma, inferno, plasma and viridis. Works with browserify and D3.js
+> Javascript exports of matplotlib's new default color scales; inferno, magma, plasma and viridis. Works with browserify and D3.js
 
-![Image showing inferno, magma, plasma and viridis respectibely](example/example.png)  
-**Inferno, magma, plasma and viridis respectibely**
+![Image showing inferno, magma, plasma and viridis respectively](example/example.png)  
+**Inferno, magma, plasma and viridis respectively**
 Installation
 ------------
 
