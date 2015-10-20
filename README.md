@@ -55,13 +55,22 @@ d3.selectAll('div', document.body)
     })
 ```
 
+You can also import the raw color maps, either as `hex` or `rgb` triplets (`[r, g, b]`, where `c` is in `[0, 1]`):
+
+```js
+const d3 = require('d3')
+const plasmaMap = require('scale-color-perceptual/hex/plasma') // returns 256 hex colors from dark to bright
+
+const colorScale = d3.scale.quantize().domain([-128, 127]).range(plasmaMap)
+```
+
 Development
 -----------
 
-[`triplet-data/`](triplet-data/) contains raw JSON exports of the pixel triplets
-from [`bids/colormap`][1] which are the default color scales in matplotlib 2.0.
+[`rgb/`](rgb/) contains raw JSON exports of the pixel `[r, g, b]` triplets
+from [`bids/colormap`][1], which are the default color scales in matplotlib 2.0.
 The pixel triplets were obtained from [`bids/colormap#84cb377`][2]. To build the
-corresponding [`hex-data/`](hex-data/) files, run `make`.
+corresponding [`hex/`](hex/) files, run `make`.
 
 License
 -------

@@ -1,10 +1,10 @@
-TRIPLET_DATA = $(wildcard triplet-data/*.json)
-HEX_DATA = $(addprefix hex-data/,$(notdir $(TRIPLET_DATA)))
+RGB_DATA = $(wildcard rgb/*.json)
+HEX_DATA = $(addprefix hex/,$(notdir $(RGB_DATA)))
 
 all: $(HEX_DATA)
 
-hex-data:
-	mkdir -p hex-data
+hex:
+	mkdir -p hex
 
-hex-data/%.json: triplet-data/%.json hex-data
+hex/%.json: rgb/%.json hex
 	node build $(abspath $<) > $@
