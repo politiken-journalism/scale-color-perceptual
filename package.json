@@ -25,6 +25,9 @@
     "d3",
     "interpolation"
   ],
+  "directories": {
+    "example": "example"
+  },
   "author": "Emil Bay <emil.bay@pol.dk>",
   "license": "ISC",
   "bugs": {
