@@ -1,7 +1,7 @@
 {
   "name": "scale-color-perceptual",
   "version": "1.1.0",
-  "description": "Javascript exports of matplotlib's new default color scales; magma, inferno, plasma and viridis. Works with browserify and D3.js",
+  "description": "Javascript exports of matplotlib's new default color scales; inferno, magma, plasma and viridis. Works with browserify and D3.js",
   "main": "browser.js",
   "scripts": {
     "test": "standard"
